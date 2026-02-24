@@ -4,21 +4,29 @@
     </head>
     <body>
          <form>
+            <fieldset>
+                <legend>Personal info :</legend>
             <label for="firstname"> firstname</label><br>
-            <input type="emri"id="firstname" name="firstname"><br>
+            <input type="emri"id="firstname" name="firstname" placeholder="firstname" required><br>
             <label for="lastname"> lastname :</label><br>
-            <input type="emri"id="lastname" name="firstname"><br>
+            <input type="emri"id="lastname" name="firstname" readonly required><br>
             <label for="email"> email:</label><br>
-            <input type="email" name="email"id="email"><br>
+            <input type="email" name="email"id="email" disabled><br>
             <label for="password"> password:</label><br>
-            <input type="password" id="password"name="password"><br>
-            <label>gender: </label>
+            <input type="password" id="password"name="password" size="40" readonly><br>
+
+
+            <label>gender: </label><br>
+
+
             <input type="radio" name="gender"id="male"value="male">
             <label for="male">male</label><br>
             <input type="radio" name="gender"id="female"value="female">
             <label for="female">female</label><br>
+             
+            <label>hobbies: </label><br>
 
-            <label>hobbies: </label>
+
             <input type="checkbox" name="hobbies"id="gaming"value="gaming">
             <label for="gaming">gaming</label><br>
             <input type="checkbox" name="hobbies"id="footboll"value="footboll">
@@ -36,7 +44,7 @@
                  
             </select><br><br>
             <label for="message">leave a message:</label><br>
-            <textarea name="message" row="10" cols="10"></textarea><br><br>
+            <textarea name="message" row="10" cols="10" maxlength="50"></textarea><br><br>
 
 
             <input type="submit" id="submit" name="submit"><br><br>
@@ -45,7 +53,7 @@
 
 
             
-
+            </fieldset>
          </form>
     </body>
 </html>
